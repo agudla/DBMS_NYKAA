@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Calibri, Helvetica, sans-serif;
+      background-image: url("");
+      background-color: black;
+    }
+
+    .container {
+      font-style: italic;
+      color: rgb(255, 255, 255);
+      padding: 0%;
+      margin-right:50px;
+      margin-left:20px;
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: inset;
+      border-radius: 50px;
+      border-color: aqua;
+      background: #f1f1f1;
+    }
+
+
+    input[type="email"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: inset;
+      border-radius: 50px;
+      border-color: aqua;
+      background: #f1f1f1;
+    }
+
+
+    div {
+      padding: 10px 0;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    .registerbtn {
+      background-color: #af4caa;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: outset;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+    }
+
+    .logo {
+      color: #ff00d0f0;
+      font-size: 35px;
+      font-family: "caveat";
+      font-style: italic;
+      align-items: center;
+      padding-top: 10px;
+    }
+
+.mod{
+  text-decoration: none;
+  color: #ff00d0f0;
+}
+  </style>
+  <title>Sign up</title>
+</head>
+
+<body>
+  <h2 class="logo">
+    <a class = "mod" href="/"><center>Nykaa</center></a>
+  </h2>
+  <form action="/register" method="POST">
+    <div class="container">
+      <center>
+        <h1>Let's get you registered!</h1>
+      </center>
+      <hr>
+      <label><b> First Name :</b></label>
+      <input type="text" name="firstname" placeholder="First name" size="15" required />
+      
+      <label><b>Last Name :</b> </label>
+      <input type="text" name="lastname" placeholder="Last name" size="15" required />
+      
+      <b>Phone Number :</b>
+    </label>
+    
+    <input type="text" name="Contact" placeholder="Phone Number" size="10" required>
+    <label>
+      <b>Current Address :</b>
+    </label>
+    <textarea cols="80" rows="5" placeholder="Current Address" name="address" value="address" required>
+    </textarea>
+    <label for="email"><b>Email :</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+    <label><b>Password :</b></label>
+    <input type="password" name="password" placeholder="Set password" size="15" required />
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  </form>
+</body>
+
+</html>
